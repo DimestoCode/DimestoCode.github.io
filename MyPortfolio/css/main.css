@@ -1,0 +1,352 @@
+@font-face {
+  font-family: 'Museo100it';
+  src: url('../fonts/museosanscyrl_100_italic-webfont.eot');
+  src: url('../fonts/museosanscyrl_100_italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/museosanscyrl_100_italic-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/museosanscyrl_100_italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/museosanscyrl_100_italic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/museosanscyrl_100_italic-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Museo100';
+  src: url('../fonts/museosanscyrl_100-webfont.eot');
+  src: url('../fonts/museosanscyrl_100-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/museosanscyrl_100-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/museosanscyrl_100-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/museosanscyrl_100-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/museosanscyrl_100-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Museo300it';
+  src: url('../fonts/museosanscyrl_300_italic-webfont.eot');
+  src: url('../fonts/museosanscyrl_300_italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/museosanscyrl_300_italic-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/museosanscyrl_300_italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/museosanscyrl_300_italic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/museosanscyrl_300_italic-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Museo300';
+  src: url('../fonts/museosanscyrl_300-webfont.eot');
+  src: url('../fonts/museosanscyrl_300-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/museosanscyrl_300-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/museosanscyrl_300-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/museosanscyrl_300-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/museosanscyrl_300-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Museo900it';
+  src: url('../fonts/museosanscyrl_900_italic-webfont.eot');
+  src: url('../fonts/museosanscyrl_900_italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/museosanscyrl_900_italic-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/museosanscyrl_900_italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/museosanscyrl_900_italic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/museosanscyrl_900_italic-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Museo900';
+  src: url('../fonts/museosanscyrl_900-webfont.eot');
+  src: url('../fonts/museosanscyrl_900-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/museosanscyrl_900-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/museosanscyrl_900-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/museosanscyrl_900-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/museosanscyrl_900-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/natasha-webfont.eot');
+  src: url('../fonts/natasha-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/natasha-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/natasha-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/natasha-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/natasha-webfont.svg#svgFontName') format('svg');
+}
+.section__text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+  color: black;
+}
+body {
+  font-family: Museo300, sans-serif;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+div,
+header {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  width: 940px;
+  margin: 0px auto;
+}
+.header {
+  padding: 40px 0 80px 0;
+  background: url('../img/head-bg.png') no-repeat center top;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.05em;
+  line-height: 48px;
+}
+.header-logo .f-part {
+  display: inline-block;
+  font-family: Museo100, sans-serif;
+  font-size: 13px;
+}
+.header-logo .s-part {
+  display: inline-block;
+  font-family: Museo900, sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  margin-left: -4px;
+}
+.header-menu {
+  display: flex;
+  width: 330px;
+  justify-content: space-between;
+}
+.header-menu-item {
+  font-family: Museo900, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  line-height: 48px;
+}
+.header-email {
+  font-weight: 300;
+  font-size: 13px;
+}
+.header-email a {
+  color: white;
+  border-bottom: 1px solid #6d6f69;
+  line-height: 43px;
+  padding-bottom: 4px;
+}
+.header-offer {
+  text-align: center;
+  margin-top: 265px;
+  text-transform: uppercase;
+  color: white;
+}
+.header-offer-heading {
+  font-family: Natasha;
+  font-size: 49px;
+  line-height: 55px;
+  letter-spacing: 0.1em;
+}
+.header-offer-postheading {
+  display: block;
+  font-family: Museo100, sans-serif;
+  font-weight: 100;
+  font-size: 29px;
+  line-height: 55px;
+  letter-spacing: 0.1em;
+  margin-bottom: 255px;
+}
+.header-foot {
+  text-align: center;
+}
+.header-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: url('../img/arrow.png') no-repeat center center;
+}
+.about {
+  padding: 70px 0 90px 0;
+}
+.about-header {
+  font-family: Natasha, sans-serif;
+  font-size: 37px;
+  color: #22241b;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+.about-contentbox {
+  display: flex;
+  justify-content: space-between;
+}
+.about-left {
+  width: 47%;
+}
+.about-left-postheader {
+  font-family: Natasha, sans-serif;
+  font-size: 22px;
+  color: #6d6f69;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.about-left-text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+  color: black;
+}
+.about-left-text p {
+  margin-bottom: 25px;
+}
+.about-left-text p:nth-child(3) {
+  margin-bottom: 0;
+}
+.about-right {
+  width: 47%;
+}
+.about-right-postheader {
+  font-family: Natasha, sans-serif;
+  font-size: 22px;
+  color: #6d6f69;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 0.05em;
+}
+.about-right-postheader:nth-child(2) {
+  margin-bottom: 25px;
+}
+.about-right-rectangles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.about-right-rectangles .rect-block {
+  width: 102px;
+}
+.about-right-rectangles .rect-block:nth-child(3) {
+  margin-bottom: 0px;
+}
+.about-right-rectangles .rect {
+  text-align: center;
+  color: #204d15;
+  width: 100%;
+  background: url('../img/rectangle.png') no-repeat center top;
+  font-family: Museo100, sans-serif;
+  font-size: 20px;
+  line-height: 102px;
+  margin-bottom: 22px;
+}
+.about-right-rectangles .rect-value {
+  color: #3f4139;
+  font-family: Museo100, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+}
+.about-right-link {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.about-right-link-item {
+  font-family: Museo300, sans-serif;
+  font-size: 14px;
+}
+.about-right-link-item a {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #becbbb;
+  color: #204d15;
+  margin-bottom: 15px;
+}
+.about-right-link-item a:nth-child(3) {
+  margin-bottom: 0;
+}
+.about-right-link-typefield {
+  margin-left: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-right-link-typefield-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #eef1ed url('../img/person.png') no-repeat center center;
+  margin-right: 20px;
+}
+.about-right-link-typefield-text {
+  font-family: Museo300, sans-serif;
+  font-size: 14px;
+  color: #60615a;
+  line-height: 65px;
+}
+.skills {
+  padding-bottom: 80px;
+}
+.skills-heading {
+  font-family: Natasha, sans-serif;
+  font-size: 37px;
+  color: #22241b;
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+}
+.skills-content-item {
+  display: flex;
+  align-items: center;
+}
+.skills-content-item-ellipse {
+  font-family: Museo100, sans-serif;
+  font-size: 15px;
+  color: #204d15;
+  width: 61px;
+  text-align: center;
+  background: url('../img/double-ellipse.png') no-repeat center top;
+  line-height: 61px;
+  margin-right: 25px;
+}
+.skills-content-item-text {
+  font-family: Museo900, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #3a3c34;
+  letter-spacing: 0.1em;
+}
+.works {
+  padding-bottom: 120px;
+}
+.works .works-heading {
+  font-family: Natasha, sans-serif;
+  font-size: 37px;
+  color: #22241b;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+.works-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.works-item {
+  position: relative;
+}
+.works-item-hover {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  bottom: 4px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.works-item-hover .name {
+  font-family: Museo900, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 40%;
+}
+.works-item-hover .watch {
+  display: inline-block;
+  font-family: Museo300, sans-serif;
+  font-size: 13px;
+  color: white;
+  border-bottom: 1px solid #858587;
+  margin-bottom: 40%;
+}
+.works-item:hover .works-item-hover {
+  display: block;
+}
+.footer {
+  padding-bottom: 100px;
+}
+.footer-text {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #6d6f69;
+  letter-spacing: 0.1em;
+}

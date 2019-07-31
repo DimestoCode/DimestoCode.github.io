@@ -1,0 +1,92 @@
+/*  --- Planchets --- */ 
+@media screen and (max-width: 960px) {
+	.container {
+		width:90%;
+	}
+	.about-right-link {
+		display: block;	
+	}
+	.about-right-link-typefield {
+		margin-left: 0;	
+		margin-top: 10px;	
+	}
+	.skills-content {
+		display: block;
+		&-item {
+			width:50%;
+			float: left;
+			display: flex;
+		}
+		&-item:nth-child(1) {
+			margin-bottom: 20px;
+		}
+		&-item:nth-child(2) {
+			margin-bottom: 20px;
+		}
+	}
+	.skills-content:after {
+		content:'';
+		display: table;
+		clear:both;
+	}
+
+	.works-item {
+		width:33%;
+		overflow:hidden;
+		img {
+			width:100%;
+		}
+		&-hover {
+			overflow:hidden;
+
+		}
+	}
+	
+}
+
+/* --- Mobile ---*/ 
+@media screen and (max-width:728px) {
+	.header-offer-postheading {
+		margin-bottom: 40%;
+	}
+	.header-menu {
+		display: none;
+	}
+	.about-contentbox {
+		display: block;
+	}
+	.about-left {
+		width:100%;
+	}
+	.about-right {
+		width: 100%;
+		&-rectangles {
+			display: block;
+			.rect-block {
+				margin: 0 auto;
+				margin-bottom: 15px;
+			}
+		} 
+	}
+	.about-left-text {
+		margin-bottom: 45px;
+	}
+	.skills-content-item {
+		float:none;
+		width: 100%;
+	}
+	.skills-content-item:nth-child(3) {
+		margin-bottom: 20px;
+	}
+	.works-wrapper {
+		display: block;
+	}
+	.works-item {
+		width:90%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		img {
+			width:100%;
+		}
+	}
+}
