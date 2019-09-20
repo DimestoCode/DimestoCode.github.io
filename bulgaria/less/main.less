@@ -1,0 +1,1117 @@
+/* -- Шрифты --*/
+@font-face {
+	font-family: 'Museo100it';
+	src: url('../fonts/museosanscyrl_100_italic-webfont.eot');
+	src: url('../fonts/museosanscyrl_100_italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/museosanscyrl_100_italic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/museosanscyrl_100_italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */ 
+	url('../fonts/museosanscyrl_100_italic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ 
+	url('../fonts/museosanscyrl_100_italic-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+	font-family: 'Museo100';
+	src: url('../fonts/museosanscyrl_100-webfont.eot');
+	src: url('../fonts/museosanscyrl_100-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/museosanscyrl_100-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/museosanscyrl_100-webfont.woff') format('woff'), /* Pretty Modern Browsers */ 
+	url('../fonts/museosanscyrl_100-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ 
+	url('../fonts/museosanscyrl_100-webfont.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: 'Museo300';
+	src: url('../fonts/museosanscyrl_300-webfont.eot');
+	src: url('../fonts/museosanscyrl_300-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/museosanscyrl_300-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/museosanscyrl_300-webfont.woff') format('woff'), /* Pretty Modern Browsers */ 
+	url('../fonts/museosanscyrl_300-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ 
+	url('../fonts/museosanscyrl_300-webfont.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: 'Museo900';
+	src: url('../fonts/museosanscyrl_900-webfont.eot');
+	src: url('../fonts/museosanscyrl_900-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/museosanscyrl_900-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/museosanscyrl_900-webfont.woff') format('woff'), /* Pretty Modern Browsers */ 
+	url('../fonts/museosanscyrl_900-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ 
+	url('../fonts/museosanscyrl_900-webfont.svg#svgFontName') format('svg');
+}
+
+/* --- Миксины --- */
+@light-blue: #23aae1;
+
+.headings() {
+	font-family: Museo900, sans-serif;
+	font-weight: 900;
+	font-size: 42px;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+
+}
+
+.text() {
+	font-family: Museo100, sans-serif;
+	font-weight: 100;
+	font-size: 17px;
+	color:black;
+	line-height: 22px;
+}
+
+.up-line() {
+	font-family: Museo900, sans-serif;
+	font-weight: 900;
+	color: #23aae2;
+	text-transform: uppercase;
+	line-height: 28px;
+}
+.down-line() {
+	font-family: Museo900, sans-serif;
+	font-weight: 900;
+	color:black;
+	text-transform: uppercase;
+	line-height: 28px;
+}
+/* --- Спецификации --- */
+body {
+	font-family: Museo100, sans-serif;
+	font-weight: 100;
+	font-size: 17px;
+	color:black;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	padding: 0;
+}
+.button {
+	background:none;
+	border:none;
+	border-radius:5px;
+	font-family: Museo900, sans-serif;
+	font-weight: 900;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 15px 25px;
+	letter-spacing:0.1em;
+}
+
+ul,li {
+	display: block;
+	margin:0;
+	padding: 0;
+}
+
+a, a:hover, a:focus, a:active,
+button, button:focus, button:active,button:hover,
+input:focus, input {
+	outline: none;
+	text-decoration: none;
+}
+
+/* --- First display --- */
+.header {
+	font-family: Museo900, sans-serif;
+	position: relative;
+	font-weight: 900;
+	color:white;
+	line-height: 1em;
+	background: url('../img/header-bg.png') no-repeat center top / cover;
+	&-gradient {
+		background: url('../img/gradient.png') no-repeat center top / cover ;
+		height: 100%;
+	}
+	&-nav_bg {
+		background: rgba(0,0,0,0.25);
+	}
+	&-logo {
+		background: @light-blue;
+		display: flex;
+		height:75px;
+		align-items:center;
+	}
+	&-logo img {
+		width:100%;
+	}
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height:100%;
+		&-item {
+			text-transform: uppercase;
+			font-size: 11px;
+
+			padding: 8px;
+			a {
+				color:white;
+			}
+		}
+		// &-item-active {
+		// 	background: rgba(255,255,255,0.2);
+		// 	border-radius:5px;
+		// }
+		&-item:hover {
+			background: rgba(255,255,255,0.2);
+			border-radius:5px;
+		}
+		&-item:active {
+			background: rgba(255,255,255,0.1);
+		}
+
+	}
+	&-contacts {
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		&-icon {
+			background:none;
+			width: 26px;
+			height: 26px;
+			border-radius:50%;
+			border: 1px dashed @light-blue;
+			color:@light-blue;
+			font-size: 14px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+		&-numbers {
+			p {
+				font-size: 16px;
+			}
+			p:first-child {
+				margin-bottom: 5px;
+			}
+		}
+
+	}
+	&-hamburg button {
+		background: none;
+		border:none;
+		font-size: 32px;
+		color:white;
+		line-height: 75px;
+	}
+	.dropdown-toggle::after {
+		border: none;
+	}
+	.hamburg-menu {
+		padding:0;
+		left: -300%;
+		border-radius:10px;
+		box-shadow: 0px 0px 15px 5px rgba(0,0,0, 0.33);
+	}
+	.hamburg-item {
+		display: block;
+		font-family: Museo900, sans-serif;
+		font-weight: 900;
+		letter-spacing: 0.1em;
+		font-size: 12px;
+		color: black;
+		border-bottom: 1px solid darkgray;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		text-transform: uppercase;
+	}
+	.hamburg-item:last-child {
+		border-bottom: none;
+	}
+	.hamburg-item:hover {
+		background: #11b2f5;
+		color: white;
+	}
+	.hamburg-item:active {
+		box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.33) inset;
+	}
+	&-main {
+		margin-top: 200px;
+		font-size: 91px;
+		font-weight: 900;
+		text-transform:uppercase;
+		margin-bottom: 25px;
+		letter-spacing: 0.5em
+	}
+	&-post {
+		font-size: 51px;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		margin-bottom:170px;
+	}
+	&-btn__down  {
+		font-size: 32px;
+		line-height: 45px;
+		text-align: center;
+		color:white;
+		width:45px;
+		height:45px;
+		border-radius: 50%;
+		border: 1px dashed white;
+		cursor: pointer;
+		margin-bottom: 	100px;
+	}
+	&-btn__down a {
+		color:white;
+	}
+}
+/* --- Преимущества ---*/
+.advantages {
+	padding: 80px 0px 95px 0px ;
+	&-heading {
+		.headings();
+		margin-bottom: 60px;
+	}
+	&-item {
+		height: 360px;
+		padding-top: 50px;
+		background-color: #f4f4f4;
+		box-shadow: 2px 2px 5px rgba(149,147,147, 0.33);
+		h3 {
+			text-align: center;
+			font-family: Museo900, sans-serif;
+			font-weight: 900;
+			text-transform: uppercase;
+			font-size: 20px;
+			margin-top: 15px;
+			position: relative;
+		}
+		h3:after {
+			content:'';
+			display: block;
+			position: absolute;
+			height: 1px;
+			width: 37px;
+			background: #c6c6c6;
+			bottom: -18px;
+			left: 50%;
+			margin-left: -18.5px;
+		}
+	}
+	&-img {
+		height:100px;
+	}
+	&-img-first {
+		background: url('../img/reliability.png') no-repeat center center;
+	}
+	&-img-second {
+		background: url('../img/credibility.png') no-repeat center center;
+	}
+	&-img-third {
+		background: url('../img/competence.png') no-repeat center center;
+	}
+	&-text {
+		width:81%;
+		margin: 35px auto 0 auto;
+		.text();
+		color:rgba(0,0,0,0.7);
+	}
+}
+/* --- Оффер --- */
+.goto {
+	font-weight: 100;
+	color:white;
+
+	background: url('../img/hungary-bg.png') no-repeat center top / cover;
+	&_upper-color {
+		padding: 75px 0px 100px 0px;
+		background-color: rgba(43,68,88, 0.9);
+
+	}
+	&-header {
+		font-family: Museo900, sans-serif;
+		font-weight: 900;
+		font-size: 42px;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+	}
+	&-blockquote {
+		margin-top: 20px;
+		font-family: Museo100it, sans-serif;
+		font-style: italic;
+		font-weight: 100;
+		color: rgba(255,255,255,0.9);
+		line-height: 26px;
+	}
+	&-name {
+		font-family: Museo900, sans-serif;
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 29px;
+		letter-spacing: 0.2em;
+	}
+	&-offer {
+		margin-top: 50px;
+		border:1px dashed white;
+		position: relative;
+		padding: 50px 0px;
+		margin-bottom: 60px;
+		&-arrow {
+			display: block;
+			width: 30px;
+			height: 30px;
+			border-radius:50%;
+			border: 1px dashed white;
+			line-height: 30px;
+			background: rgb(48,72,92);
+		}
+		&-arrow_first {
+			position: absolute;
+			content:'';
+			display: block;
+			top:-15px;
+			left:50%;
+			margin-left: -15px;
+		}
+		&-arrow_second {
+			position: absolute;
+			content:'';
+			display: block;
+			bottom:-15px;
+			left:50%;
+			margin-left: -15px;
+		}
+		&-prequestion {
+			font-weight: 100;
+			font-size: 19px;
+			text-transform: uppercase;
+		}
+		&-question {
+			font-size: 23px;
+			font-family: Museo900, sans-serif;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
+	}
+	&-answer {
+		font-family: Museo900, sans-serif;
+		font-weight: 900;
+		font-size: 37px;
+		text-transform: uppercase;
+
+	}
+	&-best {
+		font-family: Museo100, sans-serif;
+		font-weight: 100;
+		font-size: 18px;
+		color: rgba(255,255,255,0.9);
+		letter-spacing: 0.1em;
+		margin-bottom: 45px;
+	}
+	&-btn {
+		background:none;
+		border: 1px solid white;
+		color:white;
+	}
+	&-btn:hover {
+		color:#1f3647;
+		background: white;
+	}
+	&-btn:active {
+		color:#1f3647;
+		background: white;
+		box-shadow: 0px 0px 25px 5px  rgba(0,0,0,0.35) inset;
+	}
+}
+
+/* --- Транспортные услуги ---*/
+
+.services {
+	background: url('../img/city.png') no-repeat center top / cover;
+	padding-top: 90px;
+	padding-bottom: 97px;
+	&-header {
+		.headings();
+		font-size: 39px;
+		letter-spacing: 0.05em;
+		margin-bottom: 145px;
+	}
+	.left-view{
+		position: absolute;
+		left:220px;
+		top:-68px;
+		z-index:20;
+	}
+	.center-view{
+		position: absolute;
+		left:300px;
+		z-index: 100;
+		top:-127px;
+	}
+	.right-view {
+		position: absolute;
+		right:240px;
+		top:-60px;
+		z-index:10;
+	}
+	&-propose {
+		position: relative;
+		background: #f4f4f4;
+		z-index: 50;
+		padding-top: 70px;
+		padding-bottom: 40px;
+		box-shadow: 2px 2px 5px rgba(149,147,147, 0.33);
+		&-header {
+			font-size: 20px;
+			font-family: Museo900, sans-serif;
+			font-weight: 900;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}
+		&-text {
+			padding: 0px 25px 0px 30px;
+			.text();
+			line-height: 1.5em;
+			text-align: center;
+		}
+	}
+	&-ellipse {
+		width:60px;
+		height:60px;
+		border-radius:50%;
+		background: #23aae2;
+		text-align: center;
+		line-height: 60px;
+		position: absolute;
+		left:50%;
+		margin-left: -30px;
+		bottom:-30px;
+		font-size: 26px;
+		color:white;
+	}
+	&-post-propose {
+		background: #f4f4f4;
+		padding-top: 40px;
+		padding-bottom: 35px;
+		padding-left: 8px;
+		padding-right: 5px;
+		margin-bottom: 55px;
+		box-shadow: 2px 2px 5px rgba(149,147,147, 0.33);
+		&-text {
+			.text();
+			line-height: 1.5em;
+		}
+	}
+	&-btn {
+		display: block;
+		color: #23aae2;
+		border: 1px solid #23aae2;
+	}
+	&-btn:hover {
+		color: white;
+		background: #23aae2;
+	}
+	&-btn:active {
+		color: white;
+		background: #23aae2;
+		box-shadow: 0px 0px 35px 5px  rgba(0,0,0,0.2) inset;
+	}
+}
+/* --- Отзывы ---*/
+.reviews {
+	padding-top: 80px;
+	font-family: Museo100it, sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	&-heading {
+		.headings();
+		letter-spacing: 0.1em;
+		margin-bottom: 95px;
+		font-style: normal;
+	}
+	.img {
+		color: #23aae2;
+		font-size: 45px;
+		cursor:pointer;
+	}
+
+	&-content {
+		outline:none;
+		margin-bottom: 47px;
+		margin-right: 7px;
+		position: relative;
+		a {
+			color: #23aae2;
+		}
+
+		display: flex;
+		justify-content: space-around;
+		padding-bottom: 35px;
+		box-shadow: 2px 2px 2px rgba(149,147,147, 0.33);
+		&-text {
+			width:73%;
+		}
+		&-info {
+			margin-bottom: 20px;
+			&-name {
+				display: inline-block;
+				text-transform: uppercase;
+				font-family: Museo900, sans-serif;
+				font-weight: 900;
+				font-size: 16px;
+				font-style: normal;
+				letter-spacing: 0.1em;
+			}
+			
+			&-link {
+				display: inline-block;
+				font-family: Museo900, sans-serif;
+				font-weight: 900;
+				font-size: 12px;
+				color: #23aae2;
+				text-decoration:underline;
+				text-transform: uppercase;
+				font-style: normal;
+				margin-left: 37px;
+				margin-right: 140px;
+			}
+			&-direction {
+				display: inline-block;
+				color: #23aae2;
+				font-size: 12px;
+				text-transform: uppercase;
+				font-style: normal;
+			}
+		}
+		&-text-main {
+			color:black;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing:0.1em;
+		}
+	}
+	&-content:after {
+		content: '';
+		display: block;
+		width:85px;
+		position: absolute;
+		height: 5px;
+		background: white;
+		bottom:-5px;
+		left:0;
+	}
+	
+	.slick-initialized .slick-slide {
+		display: flex;
+	}
+	.arrow-left {
+		position: absolute;
+		left:-9%;
+		top:20%;
+		transition: all 0.3s ease;
+	}
+	.arrow-right {
+		position: absolute;
+		right: -9%;
+		top:20%;
+		transition: all 0.3s ease;
+	}
+	.arrow-left:hover i, .arrow-right:hover i {
+		color:#237ce2;
+	}
+	.arrow-left:active {
+		left:-10%;
+	}
+	.arrow-right:active {
+		right: -10%;
+	}
+
+
+
+	.slick-dots {
+		position: initial;
+		width:80px;
+		margin: 0 auto;
+		margin-bottom: 90px;
+		display: flex;
+		justify-content: space-between;
+	}
+	ul li {
+		width: 17px;
+		height: 17px;
+		border-radius:50%;
+		border: 1px dashed #23aae2;
+	}
+	ul li button:before {
+		content: '';
+	}
+	ul .slick-active {
+		border:none;
+			background: #23aae2;
+	}
+
+}
+
+/* --- Помощь --- */
+
+.consult {
+	padding-top: 75px;
+	background: #11b2f5 url('../img/consult-bg.png') no-repeat center top;
+	&-header {
+		.headings();
+		color:white;
+		line-height: 49px;
+		letter-spacing: 0.1em;
+	}
+	&-postheader {
+		margin-top: 20px;
+		margin-bottom: 30px;
+		font-weight: 100;
+		font-size: 21px;
+		line-height: 1.3em;
+		text-transform: uppercase;
+		color:rgba(255,255,255,0.8);
+		letter-spacing: 0.1em;
+	}
+	&-btn-down {
+		border: 1px dashed white;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background: none;
+		color:white;
+		margin-bottom: 30px;
+	}
+	&-form {
+		input {
+			position: relative;
+			font-size: 13px;
+			font-family: Museo300, sans-serif;
+			font-weight: 300;
+			color: white;
+			width: 100%;
+			padding: 25px 35px;
+			background:#30c2ff;
+			border: 1px solid white;
+			border-radius: 5px;
+			margin-bottom: 8px;
+		}
+		input:nth-child(3) {
+			margin-bottom: 20px;
+		}
+		input::placeholder {
+			font-family: Museo300, sans-serif;
+			font-weight: 300;
+			color: rgba(255,255,255,0.5);
+			text-transform: uppercase;
+		}
+		input:focus::placeholder {
+			color:white;
+		}
+		input:focus {
+			box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4);
+		}
+		&-button {
+			width: 100%;
+			color:white;
+			border:2px solid white;
+			margin-bottom: 85px;
+		}
+		&-button:hover {
+			color: #23aae2;
+			background: white;
+		}
+		&-button:active {
+			color: #23aae2;
+			background: white;
+			box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.3) inset;
+			
+		}
+
+	}
+}
+
+/* --- Футер --- */
+.footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #23aae2;
+	font-size: 14px;
+	font-family: Museo100, sans-serif;
+	font-weight: 100;
+	color: rgba(255,255,255,0.6);
+	line-height: 17px;
+	&-confindential {
+		color: rgba(255,255,255,0.6);
+		display: inline-block;
+		border-bottom: 1px dotted white;
+	}
+	&-confindential:hover {
+		color: rgba(255,255,255,0.6);
+	}
+	&-contacts {
+		display: flex;
+		justify-content: flex-end;
+		align-items:center;
+		font-family: Museo900, sans-serif;
+		font-weight: 900;
+		color:white;
+		line-height: 1em;
+		&-icon {
+			background:none;
+			width: 26px;
+			height: 26px;
+			border-radius:50%;
+			border: 1px dashed white;
+			color:white;
+			font-size: 14px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+		&-numbers {
+			p {
+				font-size: 16px;
+			}
+			p:first-child {
+				margin-bottom: 8px;
+			}
+		}
+	}
+}
+
+/* --- Контакты (страница 2) --- */
+
+.header {
+	&-gradient-contacts_page {
+		height:410px;
+	}
+	&-main-contacts_page {
+		margin-top: 70px;
+		margin-bottom: 30px;
+		font-size: 51px;
+		letter-spacing:0.2em;
+
+	}
+	&-btn__down-contacts_page {
+		margin-bottom: 45px;
+	}
+}
+.header-contacts_page {
+	height:410px;
+}
+
+.questions {
+	background-color: #f7f7f7;
+	&-wrapper {
+		margin-top: -90px;
+		background-color:white;
+		padding: 45px 100px 60px 100px;
+		box-shadow: 0px 3px 3px rgba(149,147,147, 0.33);
+		margin-bottom: 80px;
+	}
+	&-description {
+		font-size: 17px;
+		text-align: center;
+		margin-bottom: 56px;
+	}
+	&-main {
+		display: flex;
+		justify-content: space-between;
+		&-left {
+			padding-top: 75px;
+
+			&-item {
+				display: flex;
+				margin-bottom: 45px;
+
+				.left-item-img {
+					margin-right: 30px;
+				}
+				.left-item-text {
+					h2 {
+						margin-bottom: 10px;
+						font-family: Museo900, sans-serif;
+						font-weight: 900;
+						font-size: 18px;
+						color:black;
+						text-transform: uppercase;
+					}
+					p {
+						font-size: 16px;
+						line-height: 24px;
+					}
+				}
+			}
+			&-item:nth-child(3) {
+				margin-bottom: 0;
+			}
+			&-item:nth-child(1) {
+				.left-item-img {
+					margin-right: 37px;
+				}
+			}
+		}
+		&-right {
+			padding: 35px 0px 40px 0px;
+			background-color: #11b2f5;
+			width:390px;
+			border-radius:5px;
+			.questions-header {
+				span {
+					font-size: 25px;
+					letter-spacing: 0.05em;
+					line-height: 26px;
+				}
+				text-align: center;
+				font-size: 20px;
+				letter-spacing: 0.05em;
+				line-height: 26px;	
+				
+			}
+			.questions-postheader {
+				text-align: center;
+				font-size: 18px;
+				letter-spacing:0.1em;
+				line-height: 26px;
+				margin-top: 13px;
+
+			}
+			&-form {
+				padding: 0px 48px 0px 48px;
+				.question-form {
+					width:100%;
+					input {
+						padding-top: 20px;
+						padding-bottom: 20px;
+					}
+					.question-form-button {
+						font-size: 13px;
+						letter-spacing: 0.05em;
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* --- Недвижимость(страница 3) --- */
+
+
+.header {
+	&-main-properties_page {
+		margin-top: 70px;
+		margin-bottom: 30px;
+		font-size: 51px;
+		letter-spacing:0.15em;
+	}
+	&-btn__down-property_page {
+		margin-bottom: 105px;
+	}
+} 
+
+.property {
+	background: #f7f7f7;
+	&-wrapper {
+		padding-top: 40px;
+		padding-bottom: 80px;
+		margin-top: -80px;
+		background:white;
+		box-shadow: 0px 3px 3px rgba(149,147,147, 0.33);
+		margin-bottom: 85px;
+	}
+	&-description {
+		width:90%;
+		margin: 0 auto;
+		font-weight: 100;
+		text-align: center;
+		font-size: 17px;
+		line-height: 24px;
+		margin-bottom: 50px;
+		span {
+			font-family: Museo900, sans-serif;
+			font-weight: 900;
+		}
+	}
+
+	&-main {
+		padding-left: 89px;
+		padding-right: 120px;
+	}
+	&-box {
+		display: flex;
+		&-img {
+			margin-right: 40px;
+		}
+		&-img_sec {
+			margin-right: 40px;
+			margin-left: 70px;
+		}
+		&-text {
+			margin-top: 25px;
+			font-size: 16px;
+			line-height: 23px;
+			color:rgba(0,0,0,0.8);
+			letter-spacing:0.05em;
+		}
+		&-text_sec {
+			margin-top: 80px;
+		}
+	}
+	&-box:nth-child(1) {
+		margin-bottom: 20px;
+	}
+}
+
+.consultation {
+	background: #11b2f5 url('../img/consult-bg.png') no-repeat center bottom;
+	
+	padding-top: 70px;
+
+}
+
+/* --- О компании(страница 4) ---*/
+
+.about {
+	background: #f7f7f7;
+	&-wrapper {
+		padding-top: 40px;
+		padding-bottom: 80px;
+		margin-top: -80px;
+		background:white;
+		box-shadow: 0px 3px 3px rgba(149,147,147, 0.33);
+		margin-bottom: 85px;
+	}
+	&-description {
+		width:90%;
+		margin: 0 auto;
+		font-weight: 100;
+		text-align: center;
+		font-size: 17px;
+		line-height: 25px;
+		margin-bottom: 50px;
+		letter-spacing:0.03em;
+		span {
+			font-family: Museo900, sans-serif;
+			font-weight: 900;
+		}
+	}
+	&-post_description {
+		display: flex;
+		align-items:center;
+		justify-content: space-between;	
+		padding: 0px 150px;
+		margin-bottom: 55px;	
+		&-item {
+			.upline-first {
+				.up-line();
+				font-size: 30px;
+				letter-spacing: 0.28em;
+			}
+			.downline-first {
+				.down-line();
+				font-size: 15px;
+			}
+			.already-bought {
+				color: #bdbdbd;
+				font-size: 19px;	
+				text-transform: uppercase;	
+				letter-spacing:0.3em;
+			}
+			.upline-sec {
+				.up-line();
+				font-size: 30px;
+				letter-spacing: 0.07em;
+			}
+			.downline-sec {
+				.down-line();
+				font-size: 30px;
+				letter-spacing: 0.05em;
+			}
+		}
+		&-item:nth-child(1) {
+			margin-bottom: -10px;		
+		}
+	}
+	&-are_you_ready {
+		background: #23aae2;
+		text-align: center;	
+		color: white;
+		font-family:Museo900, sans-serif;
+		font-weight: 900;	
+		line-height: 75px;	
+		text-transform: uppercase;
+		font-size: 23px;
+		letter-spacing: 0.15em;
+		margin-bottom: 55px;	
+	}
+	&-absolute-ready {
+		background: #23aae2;
+		text-align: center;	
+		color: white;
+		font-family:Museo900, sans-serif;
+		font-weight: 900;	
+		line-height: 75px;	
+		text-transform: uppercase;
+		font-size: 23px;
+		letter-spacing: 0.15em;
+		margin-bottom: 55px;	
+		position: absolute;
+		width:100%;
+		height:75px;
+		top: 278px;
+	}
+	&-partners {
+		&-heading {
+			font-size: 30px;
+			font-family: Museo900, sans-serif;
+			font-weight: 900;
+			color:black;
+			text-transform: uppercase;
+			letter-spacing:0.05em;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		&-content {
+			display: flex;
+			padding-left: 60px;
+			padding-right: 60px;
+			.content-item {
+				background: #f4f4f4;
+				padding: 25px 30px 40px 30px;
+				width:435px;
+				box-shadow: 3px 3px 3px rgba(149,147,147, 0.33);
+				&-img {
+					text-align: center;
+					margin-bottom: 20px;
+				}
+				&-name {
+					text-align: center;
+					font-family: Museo900, sans-serif;
+					font-weight: 900;
+					font-size: 21px;
+					letter-spacing: 0.1em;
+					margin-bottom: 30px;
+					position: relative;
+				}
+				&-name:after {
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: -15px;
+					left:50%;
+					margin-left: -19px;
+					width:38px;
+					background: #c6c6c6;
+					height: 1px;
+				}
+				&-info {
+					text-align: justify;
+					color: rgba(0,0,0,0.8);
+					letter-spacing:0.03em;
+				}
+			}
+			.content-item:first-child {
+				margin-right: 25px;
+			}
+		}
+	}
+}
