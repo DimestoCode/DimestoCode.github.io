@@ -818,6 +818,7 @@ input {
 .footer-contacts-numbers p:first-child {
   margin-bottom: 8px;
 }
+
 /* --- Контакты (страница 2) --- */
 .header-gradient-contacts_page {
   height: 410px;
@@ -931,7 +932,7 @@ input {
   color:white;
 }
 .footer-contacts button {
- 
+ margin: 0 auto;
 }
 /* --- Недвижимость(страница 3) --- */
 .header-main-properties_page {
