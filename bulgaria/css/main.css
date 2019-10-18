@@ -141,7 +141,7 @@ input {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 1px dashed #23aae1;
+  border: 1px dashed white;
   color: #23aae1;
   font-size: 14px;
   display: -webkit-box;
@@ -932,7 +932,7 @@ input {
   color:white;
 }
 .footer-contacts button {
- margin: 0 auto;
+ margin-left: auto;
 }
 /* --- Недвижимость(страница 3) --- */
 .header-main-properties_page {
